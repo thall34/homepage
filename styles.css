@@ -1,0 +1,204 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-size: 12px;
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0.5em 0em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+img {
+    width: 2em;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 5%;
+    gap: 5%;
+    background-image: linear-gradient(to right, rgb(52, 52, 215), rgb(161, 161, 161));
+}
+
+header > h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url("./images/stock-office-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    padding: 3em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1em double rgb(28, 27, 87);
+    width: 70%;
+}
+
+.links {
+    display: flex;
+    gap: 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 3fr;
+    place-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+main > h1 {
+    grid-column: span 3;
+    place-self: start;
+    padding: 1em;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    max-height: 80%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10%;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main > section > p {
+    padding: 0.5em 2em;
+}
+
+section > img {
+    width: 100%;
+}
+
+#project3 {
+    background-color: rgb(216, 105, 105);
+}
+
+#project1 {
+    background-color: rgb(118, 113, 214);
+}
+
+#project5 {
+    background-color: rgb(133, 216, 105);
+}
+
+#project4 {
+    background-color: rgb(244, 227, 119);
+}
+
+#project2 {
+    background-color: rgb(175, 105, 216);
+}
+
+#project6 {
+    background-color: rgb(105, 216, 203);
+}
+
+footer > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+footer > img {
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#phone, #email {
+    display: flex;
+    gap: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    header, footer {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    header > h2 {
+        width: 100%;
+        height: 10em;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    }
+
+    main > h1 {
+        grid-column: span 1;
+    }
+
+    main > section > p{
+        font-size: 1em;
+    }
+
+    footer > section > div > p {
+        font-size: 1em;
+    }
+
+    footer > section {
+        gap: 1em;
+    }
+
+    footer > img {
+        width: 100%;
+    }
+}
